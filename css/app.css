@@ -1,0 +1,39 @@
+/* Your app's CSS, go crazy, make it your own */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+
+.details {
+    padding: 0px 12px 20px 12px;
+}
+
+.details img {
+    float: left;
+    margin-right: 12px;
+}
+
+.list {
+    clear: both;
+}
+.inputClass{
+  padding-bottom: 10px;
+  display: block;
+}
+.textSearch{
+  padding-left: 10px;
+}
+.btnSearc{
+  text-align: center;
+  display: block;
+  padding:10px 0 0 0;
+}
+.moviesList li{
+font-size: 13px;
+padding: 5px;
+border-bottom: #eee 1px solid;
+
+}

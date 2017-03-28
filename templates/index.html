@@ -1,0 +1,32 @@
+<view  title="'Movie Search'">
+  <content has-header="true" padding="true">
+      <div class="list list-inset">
+       <span class="input-label inputClass">Enter Keyword</span>
+        <label class="item item-input">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="text" placeholder="Search" class="textSearch" ng-model="searcKeyValue" ngTrim="true" required>
+        </label>
+      </div>
+<div class="center btnSearc">
+  <button class="button button-outline button-positive" ng-click="fetchData(searcKeyValue)">
+   SUBMIT
+   </button>
+</div>
+
+<div class="card">
+  <div class="item item-text-wrap" ng-if="responsevalid">
+    <ul class="moviesList">
+        <li style="text-center">{{movieDetails.Error}}</li>
+      <li><strong>Title</strong> - {{movieDetails.Title}}</li>
+      <li><strong>Year</strong> - {{movieDetails.Year}}</li>
+      <li><strong>Actors</strong> - {{movieDetails.Actors}}</li>
+      <li><strong>Story</strong> - {{movieDetails.Plot}}</li>
+      <li><strong>IMDB Rating</strong> - {{movieDetails.imdbRating}}</li>
+
+      <!-- <li><img src="{{movieDetails.Poster}}" alt=""></li> -->
+    </ul>
+  </div>
+</div>
+
+  </content>
+</view>
