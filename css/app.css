@@ -1,5 +1,7 @@
 /* Your app's CSS, go crazy, make it your own */
-
+body{
+  font-family: 'Lato', sans-serif;
+}
 .ionic-logo {
   display: block;
   margin: 15px auto;
@@ -35,5 +37,4 @@
 font-size: 13px;
 padding: 5px;
 border-bottom: #eee 1px solid;
-
 }

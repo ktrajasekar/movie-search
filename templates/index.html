@@ -1,5 +1,6 @@
 <view  title="'Movie Search'">
   <content has-header="true" padding="true">
+    <form name="search_form" ng-submit="fetchData(searcKeyValue)">
       <div class="list list-inset">
        <span class="input-label inputClass">Enter Keyword</span>
         <label class="item item-input">
@@ -8,12 +9,12 @@
         </label>
       </div>
 <div class="center btnSearc">
-  <button class="button button-outline button-positive" ng-click="fetchData(searcKeyValue)">
+  <button class="button button-outline button-positive">
    SUBMIT
    </button>
 </div>
-
-<div class="card">
+</form>
+<div class="card animated bounceInLeft">
   <div class="item item-text-wrap" ng-if="responsevalid">
     <ul class="moviesList">
         <li style="text-center">{{movieDetails.Error}}</li>
@@ -22,11 +23,11 @@
       <li><strong>Actors</strong> - {{movieDetails.Actors}}</li>
       <li><strong>Story</strong> - {{movieDetails.Plot}}</li>
       <li><strong>IMDB Rating</strong> - {{movieDetails.imdbRating}}</li>
-
-      <!-- <li><img src="{{movieDetails.Poster}}" alt=""></li> -->
     </ul>
+    <!-- <div class="item item-image">
+      <img src="{{movieDetails.Poster}}" alt="">
+   </div> -->
   </div>
-</div>
-
+  </div>
   </content>
 </view>
