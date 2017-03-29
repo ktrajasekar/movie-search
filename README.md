@@ -1,4 +1,4 @@
-# movie-search
+# Movie Search Ionic application using OMDb API
 
 export ANDROID_HOME="$HOME/Android/Sdk"
 
